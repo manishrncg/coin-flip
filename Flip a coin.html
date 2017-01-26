@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <script type="text/javascript">
+       var input = prompt("Lets flip the coin","yes");
+       var coin = ["Head", "Tail", "No side"];
+       var pop = Math.floor(Math.random() * coin.length);
+
+        var compare = function() { 
+         if (input === "yes") {
+            if (pop === 1) {
+                document.write("Its Heads");
+            }
+            else if (pop === 2) {
+                document.write("Its Tails");
+            }
+            else {
+                 document.write("Wow thats a miracle, standing coin");
+            }
+            }
+
+        else {
+            document.write("You should");
+         }
+        }
+         compare();
+
+    </script>
+</body>
+</html>
